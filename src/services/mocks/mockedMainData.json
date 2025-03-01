@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "userInfos": {
+            "firstName": "Jean",
+            "lastName": "Dupont",
+            "age": 28
+        },
+        "todayScore": 0.45,
+        "keyData": {
+            "calorieCount": 2100,
+            "proteinCount": 120,
+            "carbohydrateCount": 270,
+            "lipidCount": 60
+        }
+    },
+    {
+        "id": 2,
+        "userInfos": {
+            "firstName": "Marie",
+            "lastName": "Curie",
+            "age": 35
+        },
+        "score": 0.72,
+        "keyData": {
+            "calorieCount": 1800,
+            "proteinCount": 90,
+            "carbohydrateCount": 200,
+            "lipidCount": 50
+        }
+    },
+    {
+        "id": 3,
+        "userInfos": {
+            "firstName": "Pierre",
+            "lastName": "Martin",
+            "age": 42
+        },
+        "todayScore": 0.33,
+        "keyData": {
+            "calorieCount": 2300,
+            "proteinCount": 140,
+            "carbohydrateCount": 300,
+            "lipidCount": 70
+        }
+    },
+    {
+        "id": 4,
+        "userInfos": {
+            "firstName": "Sophie",
+            "lastName": "Leroy",
+            "age": 29
+        },
+        "score": 0.56,
+        "keyData": {
+            "calorieCount": 1900,
+            "proteinCount": 100,
+            "carbohydrateCount": 250,
+            "lipidCount": 55
+        }
+    },
+    {
+        "id": 5,
+        "userInfos": {
+            "firstName": "Luc",
+            "lastName": "Bernard",
+            "age": 31
+        },
+        "todayScore": 0.25,
+        "keyData": {
+            "calorieCount": 2200,
+            "proteinCount": 130,
+            "carbohydrateCount": 280,
+            "lipidCount": 65
+        }
+    },
+    {
+        "id": 6,
+        "userInfos": {
+            "firstName": "Emma",
+            "lastName": "Petit",
+            "age": 26
+        },
+        "score": 0.68,
+        "keyData": {
+            "calorieCount": 2000,
+            "proteinCount": 110,
+            "carbohydrateCount": 260,
+            "lipidCount": 58
+        }
+    },
+    {
+        "id": 7,
+        "userInfos": {
+            "firstName": "Thomas",
+            "lastName": "Moreau",
+            "age": 37
+        },
+        "todayScore": 0.4,
+        "keyData": {
+            "calorieCount": 2400,
+            "proteinCount": 150,
+            "carbohydrateCount": 310,
+            "lipidCount": 75
+        }
+    },
+    {
+        "id": 8,
+        "userInfos": {
+            "firstName": "Laura",
+            "lastName": "Dubois",
+            "age": 33
+        },
+        "score": 0.5,
+        "keyData": {
+            "calorieCount": 1700,
+            "proteinCount": 80,
+            "carbohydrateCount": 220,
+            "lipidCount": 45
+        }
+    },
+    {
+        "id": 9,
+        "userInfos": {
+            "firstName": "Nicolas",
+            "lastName": "Lefevre",
+            "age": 30
+        },
+        "todayScore": 0.6,
+        "keyData": {
+            "calorieCount": 2500,
+            "proteinCount": 160,
+            "carbohydrateCount": 320,
+            "lipidCount": 80
+        }
+    },
+    {
+        "id": 10,
+        "userInfos": {
+            "firstName": "Camille",
+            "lastName": "Roux",
+            "age": 27
+        },
+        "score": 0.75,
+        "keyData": {
+            "calorieCount": 1950,
+            "proteinCount": 95,
+            "carbohydrateCount": 240,
+            "lipidCount": 52
+        }
+    }
+]

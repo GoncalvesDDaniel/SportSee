@@ -6,7 +6,7 @@ function Dashboard() {
     return (
         <>
             <h1>Dashboard</h1>
-            <NavLink to={`/${id}/profil`}>profil 1</NavLink>
+            {/* <NavLink to={`/${id}/dashboard`}>Link to Dashboard</NavLink> */}
         </>
     );
 }

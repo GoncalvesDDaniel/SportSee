@@ -8,7 +8,7 @@ function Header() {
     return (
         <header>
             <img src={logo_main} alt="SportSee logo" className="header-logo" />
-            <nav aria-label="Main Navigation" className="header-nav">
+            <nav aria-label="Navigation principale" className="header-nav">
                 <ul className="header-nav_ul">
                     <li className="header-nav_li">
                         <NavLink

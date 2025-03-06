@@ -7,8 +7,8 @@ function DashboardLayout() {
     return (
         <>
             <Header />
-            <Sidebar />
             <main>
+                <Sidebar />
                 <Outlet />
             </main>
         </>

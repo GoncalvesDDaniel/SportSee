@@ -1,0 +1,31 @@
+.sidebar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    // full height - header height
+    height: calc(100dvh - 97px);
+    position: sticky;
+    img {
+        // background-color: white;
+        // width: 64px;
+        aspect-ratio: 1 / 1;
+        border-radius: 6px;
+        padding: 16px;
+    }
+}
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 27px;
+}
+
+.sidebar-copyright {
+    color: white;
+    writing-mode: sideways-lr;
+    text-orientation: sideways;
+    margin-bottom: 60px;
+}

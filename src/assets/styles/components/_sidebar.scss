@@ -6,8 +6,11 @@
     align-items: center;
     width: max-content;
     // full height - header height
-    height: calc(100dvh - 97px);
-    position: absolute;
+    // height: calc(100dvh - 97px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     img {
         // background-color: white;
         // width: 64px;

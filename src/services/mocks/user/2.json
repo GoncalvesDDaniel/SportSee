@@ -1,0 +1,17 @@
+{
+    "data": {
+        "id": 2,
+        "userInfos": {
+            "firstName": "Marie",
+            "lastName": "Curie",
+            "age": 35
+        },
+        "score": 0.72,
+        "keyData": {
+            "calorieCount": 1800,
+            "proteinCount": 90,
+            "carbohydrateCount": 200,
+            "lipidCount": 50
+        }
+    }
+}

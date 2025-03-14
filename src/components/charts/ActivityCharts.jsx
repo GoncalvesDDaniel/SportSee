@@ -25,18 +25,34 @@ function ActivityCharts() {
         <div className="activityCharts-container">
             <ResponsiveContainer aspect={835 / 320}>
                 <BarChart
-                    width="100%"
-                    height="100%"
                     data={activity.data.sessions}
+                    barGap={8}
                     barCategoryGap={8}
+                    margin={{ top: 20 }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="day" />
-                    <YAxis dataKey="kilogram" />
+                    <YAxis yAxisId="kg" orientation="right" />
+                    <YAxis yAxisId="kCal" orientation="left" hide />
                     <Tooltip />
-                    <Legend />
-                    <Bar dataKey="kilogram" fill="#000" />
-                    <Bar dataKey="calories" fill="#E60000" />
+                    <Legend
+                        align="right"
+                        verticalAlign="top"
+                        iconType="circle"
+                    />
+                    <Bar
+                        yAxisId="kg"
+                        dataKey="kilogram"
+                        fill="#000"
+                        barSize={7}
+                    />
+
+                    <Bar
+                        yAxisId="kCal"
+                        dataKey="calories"
+                        fill="#E60000"
+                        barSize={7}
+                    />
                 </BarChart>
             </ResponsiveContainer>
         </div>

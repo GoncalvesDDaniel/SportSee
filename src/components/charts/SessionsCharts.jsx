@@ -25,11 +25,14 @@ function SessionsCharts() {
         <div className="sessionsCharts-container">
             <ResponsiveContainer aspect={258 / 263}>
                 <LineChart
-                    width="100%"
-                    height="100%"
                     data={averageSessions.data.sessions}
+                    wrapperStyle={{
+                        // width: 100,
+                        backgroundColor: "#FF0000",
+                        color: "#FFF",
+                    }}
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
+                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
                     <XAxis dataKey="day" />
                     <YAxis dataKey="sessionLength" />
                     <Tooltip />

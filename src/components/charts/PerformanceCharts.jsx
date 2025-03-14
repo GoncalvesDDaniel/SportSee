@@ -47,10 +47,8 @@ function PerformanceCharts() {
             <ResponsiveContainer aspect={258 / 263}>
                 <RadarChart
                     outerRadius={90}
-                    width="100%"
-                    height="100%"
                     data={formatedData}
-                    margin={{ top: 5, right: 5, bottom: 5, left: 5 }}
+                    margin={{ top: 1, right: 20, bottom: 1, left: 20 }}
                     startAngle={-150}
                     endAngle={210}
                 >

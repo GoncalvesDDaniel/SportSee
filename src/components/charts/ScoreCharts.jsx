@@ -30,7 +30,7 @@ function ScoreCharts() {
 
     return (
         <div className="scoreCharts-container">
-            <ResponsiveContainer aspect={835 / 320}>
+            <ResponsiveContainer width="100%" aspect={1 / 1}>
                 <PieChart>
                     <Pie
                         data={data}
@@ -39,8 +39,8 @@ function ScoreCharts() {
                         cx="50%"
                         cy="50%"
                         startAngle={90}
-                        innerRadius={20}
-                        outerRadius={30}
+                        innerRadius={70}
+                        outerRadius={90}
                         fill="#8884d8"
                     >
                         {data.map((entry, index) => (

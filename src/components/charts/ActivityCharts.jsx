@@ -30,7 +30,7 @@ function ActivityCharts() {
                     barCategoryGap={8}
                     margin={{ top: 20 }}
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
                     <XAxis dataKey="day" />
                     <YAxis yAxisId="kg" orientation="right" />
                     <YAxis yAxisId="kCal" orientation="left" hide />

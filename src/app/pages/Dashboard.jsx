@@ -6,6 +6,8 @@ import ActivityCharts from "../../components/charts/ActivityCharts";
 import SessionsCharts from "../../components/charts/SessionsCharts";
 import PerformanceCharts from "../../components/charts/PerformanceCharts";
 import ScoreCharts from "../../components/charts/ScoreCharts";
+import NutrimentsData from "../../components/charts/NutrimentsData";
+import SquareLogo from "../../components/SquareLogo";
 
 function Dashboard() {
     const { id } = useParams(); // Récupérer l'ID de l'URL
@@ -17,6 +19,8 @@ function Dashboard() {
             <SessionsCharts />
             <PerformanceCharts />
             <ScoreCharts />
+            <NutrimentsData />
+            {/* <NutrimentsData><SquareLogo /></NutrimentsData> */}
         </>
     );
 }

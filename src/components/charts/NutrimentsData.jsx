@@ -46,7 +46,12 @@ function NutrimentsData(props) {
             </div>
             <div className="nutriment-box">
                 <div className="nutriments-box_logo">
-                    <SquareLogo scr="" alt="" width="" bgColor="" />
+                    <SquareLogo
+                        scr={apple}
+                        alt=""
+                        width="60"
+                        bgColor="rgba(249, 206, 35, 0.1)"
+                    />
                 </div>
                 <div className="nutriments-box_carbohydrates">
                     <p>{id1.data.keyData.carbohydrateCount}g</p>
@@ -55,7 +60,12 @@ function NutrimentsData(props) {
             </div>
             <div className="nutriment-box">
                 <div className="nutriments-box_logo">
-                    <SquareLogo scr="" alt="" width="" bgColor="" />
+                    <SquareLogo
+                        scr={cheeseburger}
+                        alt=""
+                        width="60"
+                        bgColor="rgba(253, 81, 129, 0.1)"
+                    />
                 </div>
                 <div className="nutriments-box_lipids">
                     <p>{id1.data.keyData.lipidCount}g</p>

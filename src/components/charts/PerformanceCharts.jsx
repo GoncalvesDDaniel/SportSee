@@ -38,7 +38,7 @@ function PerformanceCharts() {
             currentresult.value = perfDataArray[index].value;
             result.push(currentresult);
         }
-        console.log(result);
+        // console.log(result);
         return result;
     }
     const formatedData = formatingActivityData(performance);

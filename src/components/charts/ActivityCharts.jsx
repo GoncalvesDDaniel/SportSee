@@ -1,8 +1,4 @@
 import React from "react";
-import id1 from "./../../services/mocks/user/id1.json";
-import activity from "./../../services/mocks/user/1/activity.json";
-import averageSessions from "./../../services/mocks/user/1/average-sessions.json";
-import performance from "./../../services/mocks/user/1/performance.json";
 import "./../../assets/styles/components/charts/_activityCharts.scss";
 import {
     Bar,
@@ -14,37 +10,80 @@ import {
     XAxis,
     YAxis,
 } from "recharts";
-import { useParams } from "react-router";
 
-function ActivityCharts() {
-    // let params = useParams();
-    // console.log(params.id);
-    // console.log(activity.data.sessions);
-
+function ActivityCharts(props) {
+    const CustomTooltip = ({ active, payload }) => {
+        if (active && payload && payload.length) {
+            return (
+                <div className="custom-tooltip-activity">
+                    {/* payload[0] = (kg) */}
+                    <p>{`${payload[0].value}kg`}</p>
+                    {/* payload[1] = (kCal) */}
+                    <p>{`${payload[1].value}kCal`}</p>
+                </div>
+            );
+        }
+        return null;
+    };
     return (
         <div className="activityCharts-container">
+            <div className="activityCharts-header">
+                <h2 className="activityCharts-header_title">
+                    Activité quotidienne
+                </h2>
+                <div className="activityCharts-header_legend">
+                    <ul>
+                        <li className="list-bullet black">Poids (kg)</li>
+                        <li className="list-bullet red">
+                            Calories brûlées (kCal)
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <ResponsiveContainer aspect={835 / 320}>
                 <BarChart
-                    data={activity.data.sessions}
+                    data={props.data}
                     barGap={8}
                     barCategoryGap={8}
-                    margin={{ top: 20 }}
+                    margin={{ top: 50, right: 30, left: 30, bottom: 5 }}
                 >
                     <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                    <XAxis dataKey="day" />
-                    <YAxis yAxisId="kg" orientation="right" />
-                    <YAxis yAxisId="kCal" orientation="left" hide />
-                    <Tooltip />
-                    <Legend
-                        align="right"
-                        verticalAlign="top"
-                        iconType="circle"
+                    <XAxis
+                        dataKey="day"
+                        tickLine={false}
+                        // axisLine={false}
+                        tick={{ fontSize: 14, fill: "#9B9EAC" }}
+                        dy={15}
+                        stroke="#DEDEDE"
+                    />
+                    <YAxis
+                        yAxisId="kg"
+                        dataKey="kilogram"
+                        orientation="right"
+                        tickLine={false}
+                        axisLine={false}
+                        tick={{ fontSize: 14, fill: "#9B9EAC" }}
+                        dx={15}
+                        // Domaine dynamique
+                        domain={["dataMin - 1", "dataMax + 1"]}
+                        allowDecimals={false}
+                    />
+                    <YAxis
+                        yAxisId="kCal"
+                        dataKey="calories"
+                        orientation="left"
+                        hide
+                    />
+                    <Tooltip
+                        content={<CustomTooltip />}
+                        cursor={{ fill: "rgba(196, 196, 196, 0.5)" }}
                     />
                     <Bar
                         yAxisId="kg"
                         dataKey="kilogram"
-                        fill="#000"
+                        fill="#282D30"
                         barSize={7}
+                        radius={[10, 10, 0, 0]}
                     />
 
                     <Bar
@@ -52,6 +91,7 @@ function ActivityCharts() {
                         dataKey="calories"
                         fill="#E60000"
                         barSize={7}
+                        radius={[10, 10, 0, 0]}
                     />
                 </BarChart>
             </ResponsiveContainer>

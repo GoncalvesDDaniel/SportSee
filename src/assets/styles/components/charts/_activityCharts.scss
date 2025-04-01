@@ -1,4 +1,57 @@
 .activityCharts-container {
     // svg { max-width: 835px; }
     max-width: 835px;
+    padding: 24px 32px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.activityCharts-header {
+    display: flex;
+    justify-content: space-between;
+    &_title {
+        font-size: 15px;
+        color: rgba(32, 37, 58, 1);
+    }
+    &_legend ul {
+        display: flex;
+        font-size: 14px;
+        color: rgba(116, 121, 140, 1);
+        gap: 32px;
+    }
+}
+.list-bullet {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+
+    &::before {
+        // Simule une puce
+        content: "•";
+        font-size: 2em;
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &.black::before {
+        color: rgba(40, 45, 48, 1);
+    }
+    &.red::before {
+        color: rgba(230, 0, 0, 1);
+    }
+}
+
+.custom-tooltip-activity {
+    background-color: #e60000;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 4px 7px;
+    text-align: center;
+
+    p {
+        margin: 7px 0;
+    }
 }

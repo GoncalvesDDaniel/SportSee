@@ -28,9 +28,9 @@ function ActivityCharts(props) {
     return (
         <div className="activityCharts-container">
             <div className="activityCharts-header">
-                <h2 className="activityCharts-header_title">
+                <h3 className="activityCharts-header_title">
                     Activité quotidienne
-                </h2>
+                </h3>
                 <div className="activityCharts-header_legend">
                     <ul>
                         <li className="list-bullet black">Poids (kg)</li>

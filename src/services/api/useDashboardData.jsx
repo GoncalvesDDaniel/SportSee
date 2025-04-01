@@ -5,7 +5,7 @@ import {
     formatActivityData,
     formatSessionsData,
     formatPerformanceData,
-} from "./../../utils/dataFormatters";
+} from "../../utils/dataFormatters";
 
 function useDashboardData(userId) {
     const [data, setData] = useState({

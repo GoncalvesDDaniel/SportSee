@@ -18,7 +18,7 @@ export const formatActivityData = (apiData) => {
 
 export const formatSessionsData = (apiData) => {
     const sessionsData = apiData.data;
-    // on remplace les jours (1, 2, ...) en lettres (L, M, M, ...) avec un index - 1
+    // on remplace les jours en chiffre par des lettres avec un index - 1
     const dayMapping = ["L", "M", "M", "J", "V", "S", "D"];
     return sessionsData.sessions.map((session) => ({
         ...session,

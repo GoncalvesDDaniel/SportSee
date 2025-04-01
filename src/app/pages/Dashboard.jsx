@@ -7,7 +7,7 @@ import PerformanceCharts from "../../components/charts/PerformanceCharts";
 import ScoreCharts from "../../components/charts/ScoreCharts";
 import NutrimentsData from "../../components/charts/NutrimentsData";
 import useFetch from "../../services/api/useFetch";
-import useDashboardData from "../../services/api/useDashvoardData";
+import useDashboardData from "../../services/api/useDashboardData";
 
 function Dashboard() {
     // Récupérer l'ID de l'URL

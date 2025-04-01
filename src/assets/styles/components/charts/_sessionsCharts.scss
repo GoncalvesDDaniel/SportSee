@@ -1,4 +1,23 @@
 .sessionsCharts-container {
     max-width: 258px;
-    // background-color: #ff0000;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+}
+.sessionsCharts-title {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    padding: 30px;
+    font-weight: 500;
+}
+.recharts-tooltip-wrapper {
+    outline: none;
+    background-color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 0px 7px;
+    text-align: center;
 }

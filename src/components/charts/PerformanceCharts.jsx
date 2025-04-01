@@ -1,8 +1,4 @@
 import React from "react";
-import id1 from "./../../services/mocks/user/id1.json";
-import activity from "./../../services/mocks/user/1/activity.json";
-import averageSessions from "./../../services/mocks/user/1/average-sessions.json";
-import performance from "./../../services/mocks/user/1/performance.json";
 import "./../../assets/styles/components/charts/_performanceCharts.scss";
 import {
     Legend,
@@ -12,57 +8,37 @@ import {
     Radar,
     RadarChart,
     ResponsiveContainer,
-    Tooltip,
 } from "recharts";
-import { useParams } from "react-router";
 
-function PerformanceCharts() {
-    // let params = useParams();
-    // console.log(params.id);
-    // console.log(performance.data);
-    // console.log(performance.data.data);
-    // console.log(performance.data.kind);
-
-    function formatingActivityData(obj) {
-        const result = [];
-        const perfDataArray = obj.data.data;
-        const perfKindDictionnary = obj.data.kind;
-
-        for (let index = 0; index < perfDataArray.length; index++) {
-            const currentKind = Object.getOwnPropertyDescriptor(
-                perfDataArray[index],
-                "kind"
-            ).value;
-            const currentresult = {};
-            currentresult.kind = perfKindDictionnary[currentKind];
-            currentresult.value = perfDataArray[index].value;
-            result.push(currentresult);
-        }
-        // console.log(result);
-        return result;
-    }
-    const formatedData = formatingActivityData(performance);
+function PerformanceCharts(props) {
     return (
         <div className="performanceCharts-container">
-            <ResponsiveContainer aspect={258 / 263}>
+            <ResponsiveContainer width="100%" aspect={258 / 263}>
                 <RadarChart
-                    outerRadius={90}
-                    data={formatedData}
-                    margin={{ top: 1, right: 20, bottom: 1, left: 20 }}
-                    startAngle={-150}
-                    endAngle={210}
+                    data={props.data}
+                    // margin={{ right: 5, left: 5 }}
+                    // margin={{ top: 10, right: 5, bottom: 10, left: 5 }}
+                    // margin={{ top: 40, right: 50, bottom: 40, left: 50 }}
+                    outerRadius="70%"
                 >
                     <PolarGrid />
-                    <PolarAngleAxis dataKey="kind" />
-                    {/* <PolarRadiusAxis angle={30} domain={[0, 150]} /> */}
-                    <PolarRadiusAxis angle={30} />
+                    <PolarAngleAxis
+                        dataKey="kind"
+                        stroke="#FFFFFF"
+                        tickLine={false}
+                        axisLine={false}
+                        tick={{ fill: "#FFFFFF", fontSize: 12 }}
+                    />
+                    <PolarRadiusAxis
+                        axisLine={{ stroke: "transparent" }}
+                        tick={{ fill: "transparent" }}
+                    />
                     <Radar
                         dataKey="value"
-                        stroke="#8884d8"
+                        stroke="#FF0101"
                         fill="#FF0101"
-                        fillOpacity={0.6}
+                        fillOpacity={0.7}
                     />
-                    <Legend />
                 </RadarChart>
             </ResponsiveContainer>
         </div>

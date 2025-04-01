@@ -8,9 +8,9 @@ import { Suspense } from "react";
 function App() {
     alert("hello App");
     return (
-        <Suspense>
-            <DashboardLayout />
-        </Suspense>
+        // <Suspense>
+        <DashboardLayout />
+        // </Suspense>
     );
 }
 

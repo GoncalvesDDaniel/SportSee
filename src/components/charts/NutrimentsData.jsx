@@ -12,64 +12,64 @@ function NutrimentsData(props) {
     return (
         <section className="nutrimentsData-container">
             <div className="nutriment-box">
-                <div className="nutriments-box_logo">
+                <div className="nutriment-box_logo">
                     <SquareLogo
-                        scr={energy}
-                        alt=""
+                        src={energy}
+                        alt="Icône calories"
                         width="60"
                         bgColor=" rgba(255, 0, 0, 0.1)"
                     />
                 </div>
-                <div className="nutriments-box_calories">
-                    <p>
+                <div className="nutriment-box_info">
+                    <p className="value">
                         {Intl.NumberFormat("en-US").format(
-                            id1.data.keyData.calorieCount
+                            props.data.calorieCount
                         )}
                         kCal
                     </p>
-                    <h2>Calories</h2>
+                    <p className="label">Calories</p>
                 </div>
             </div>
             <div className="nutriment-box">
-                <div className="nutriments-box_logo">
+                <div className="nutriment-box_logo">
                     <SquareLogo
-                        scr={chicken}
-                        alt=""
+                        src={chicken}
+                        alt="Icône protéines"
                         width="60"
                         bgColor="rgba(74,184,255,0.1)"
                     />
                 </div>
-                <div className="nutriments-box_proteins">
-                    <p>{id1.data.keyData.proteinCount}g</p>
-                    <h2>Proteines</h2>
+                <div className="nutriment-box_info">
+                    <p className="value">{props.data.proteinCount}g</p>
+                    <p className="label">Proteines</p>
                 </div>
             </div>
             <div className="nutriment-box">
-                <div className="nutriments-box_logo">
+                <div className="nutriment-box_logo">
                     <SquareLogo
-                        scr={apple}
-                        alt=""
+                        src={apple}
+                        alt="Icône glucides"
                         width="60"
                         bgColor="rgba(249, 206, 35, 0.1)"
                     />
                 </div>
-                <div className="nutriments-box_carbohydrates">
-                    <p>{id1.data.keyData.carbohydrateCount}g</p>
-                    <h2>Glucides</h2>
+                <div className="nutriment-box_info">
+                    <p className="value">{props.data.carbohydrateCount}g</p>
+                    <p className="label">Glucides</p>
                 </div>
             </div>
             <div className="nutriment-box">
-                <div className="nutriments-box_logo">
+                <div className="nutriment-box_logo">
                     <SquareLogo
-                        scr={cheeseburger}
-                        alt=""
+                        src={cheeseburger}
+                        alt="Icône lipides"
                         width="60"
                         bgColor="rgba(253, 81, 129, 0.1)"
                     />
                 </div>
-                <div className="nutriments-box_lipids">
-                    <p>{id1.data.keyData.lipidCount}g</p>
-                    <h2>Lipides</h2>
+                <div className="nutriment-box_info">
+                    <p className="value">{props.data.lipidCount}g</p>
+                    <p className="label">Lipides</p>
                 </div>
             </div>
         </section>

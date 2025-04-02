@@ -1,0 +1,31 @@
+.nutrimentsData-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nutriment-box {
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+    padding: 20px 24px;
+    border-radius: 5px;
+    gap: 39px;
+    &_info {
+        display: flex;
+        flex-direction: column; // Texte sur deux lignes
+        gap: 2px; // Petit espace entre valeur et label
+
+        .value {
+            font-size: 20px; // Ajuster
+            font-weight: 700;
+            color: #282d30; // Couleur valeur
+            margin: 0; // Reset marge P
+        }
+
+        .label {
+            font-size: 14px; // Ajuster
+            color: #74798c; // Couleur label
+            margin: 0; // Reset marge P
+        }
+    }
+}

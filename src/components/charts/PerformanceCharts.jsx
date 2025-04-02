@@ -1,7 +1,6 @@
 import React from "react";
 import "./../../assets/styles/components/charts/_performanceCharts.scss";
 import {
-    Legend,
     PolarAngleAxis,
     PolarGrid,
     PolarRadiusAxis,
@@ -16,12 +15,10 @@ function PerformanceCharts(props) {
             <ResponsiveContainer width="100%" aspect={258 / 263}>
                 <RadarChart
                     data={props.data}
-                    // margin={{ right: 5, left: 5 }}
-                    // margin={{ top: 10, right: 5, bottom: 10, left: 5 }}
-                    // margin={{ top: 40, right: 50, bottom: 40, left: 50 }}
-                    outerRadius="70%"
+                    outerRadius=" 75%"
+                    margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
                 >
-                    <PolarGrid />
+                    <PolarGrid radialLines={false} />
                     <PolarAngleAxis
                         dataKey="kind"
                         stroke="#FFFFFF"
@@ -29,10 +26,7 @@ function PerformanceCharts(props) {
                         axisLine={false}
                         tick={{ fill: "#FFFFFF", fontSize: 12 }}
                     />
-                    <PolarRadiusAxis
-                        axisLine={{ stroke: "transparent" }}
-                        tick={{ fill: "transparent" }}
-                    />
+                    <PolarRadiusAxis tick={false} axisLine={false} />
                     <Radar
                         dataKey="value"
                         stroke="#FF0101"

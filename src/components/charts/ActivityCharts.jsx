@@ -26,7 +26,7 @@ function ActivityCharts(props) {
         return null;
     };
     return (
-        <div className="activityCharts-container">
+        <section className="activityCharts-container">
             <div className="activityCharts-header">
                 <h3 className="activityCharts-header_title">
                     Activité quotidienne
@@ -95,7 +95,7 @@ function ActivityCharts(props) {
                     />
                 </BarChart>
             </ResponsiveContainer>
-        </div>
+        </section>
     );
 }
 

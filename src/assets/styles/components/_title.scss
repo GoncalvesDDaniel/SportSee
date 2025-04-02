@@ -1,4 +1,7 @@
 @import "./../variables.scss";
+.title-container {
+    margin-bottom: 70px;
+}
 .title-name {
     font-size: $font-size-extra-big;
     &_persona {

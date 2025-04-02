@@ -23,7 +23,7 @@ const CustomTooltipSessions = ({ active, payload }) => {
 
 function SessionsCharts(props) {
     return (
-        <div className="sessionsCharts-container">
+        <section className="sessionsCharts-container">
             <h3 className="sessionsCharts-title">
                 Durée moyenne des
                 <br /> sessions
@@ -94,7 +94,7 @@ function SessionsCharts(props) {
                     />
                 </LineChart>
             </ResponsiveContainer>
-        </div>
+        </section>
     );
 }
 

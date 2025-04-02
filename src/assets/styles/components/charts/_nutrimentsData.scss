@@ -1,31 +1,35 @@
 .nutrimentsData-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
 }
 .nutriment-box {
     display: flex;
     align-items: center;
     background-color: #fbfbfb;
-    padding: 20px 24px;
+    padding: 32px;
     border-radius: 5px;
-    gap: 39px;
+    gap: 24px;
+
+    @media (max-width: 1339px) {
+        padding: 20px;
+    }
     &_info {
         display: flex;
-        flex-direction: column; // Texte sur deux lignes
-        gap: 2px; // Petit espace entre valeur et label
+        flex-direction: column;
+        gap: 2px;
 
         .value {
-            font-size: 20px; // Ajuster
+            font-size: 20px;
             font-weight: 700;
-            color: #282d30; // Couleur valeur
-            margin: 0; // Reset marge P
+            color: #282d30;
+            margin: 0;
         }
 
         .label {
-            font-size: 14px; // Ajuster
-            color: #74798c; // Couleur label
-            margin: 0; // Reset marge P
+            font-size: 14px;
+            color: #74798c;
+            margin: 0;
         }
     }
 }

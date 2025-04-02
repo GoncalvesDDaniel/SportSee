@@ -11,7 +11,7 @@ import {
 
 function PerformanceCharts(props) {
     return (
-        <div className="performanceCharts-container">
+        <section className="performanceCharts-container">
             <ResponsiveContainer width="100%" aspect={258 / 263}>
                 <RadarChart
                     data={props.data}
@@ -35,7 +35,7 @@ function PerformanceCharts(props) {
                     />
                 </RadarChart>
             </ResponsiveContainer>
-        </div>
+        </section>
     );
 }
 

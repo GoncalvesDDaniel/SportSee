@@ -1,7 +1,7 @@
 export const formatUserData = (apiData) => {
     const userData = apiData.data;
     return {
-        firstNamename: userData.userInfos.firstName,
+        firstName: userData.userInfos.firstName,
         score: userData.todayScore || userData.score || 0,
         keyData: userData.keyData,
     };

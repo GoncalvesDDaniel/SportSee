@@ -14,7 +14,7 @@ function ScoreCharts(props) {
     const backgroundCircleData = [{ name: "background", value: 1 }];
 
     return (
-        <div className="scoreCharts-container">
+        <section className="scoreCharts-container">
             <h3 className="scoreCharts-title">Score</h3>
             <div className="scoreCharts-info">
                 {/* affiche un entier du score en pourcentage */}
@@ -61,7 +61,7 @@ function ScoreCharts(props) {
                     />
                 </PieChart>
             </ResponsiveContainer>
-        </div>
+        </section>
     );
 }
 

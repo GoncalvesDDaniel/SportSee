@@ -1,9 +1,38 @@
 .main-content {
+    display: grid;
     position: relative;
-    // top: 0px;
-    // left: 224px;
     left: 118px;
     padding: 70px 90px 70px 110px;
-    max-width: calc(100dvw - 224px);
-    // height: 300dvh;
+    max-width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "welcome   welcome   welcome   welcome"
+        "activity  activity  activity  nutrients"
+        "session   performance score     nutrients";
+    gap: 30px;
+    @media (max-width: 1339px) {
+        gap: 20px;
+        padding: 50px 70px 50px 90px;
+    }
+}
+.title-container {
+    grid-area: welcome;
+}
+
+.activityCharts-container {
+    grid-area: activity;
+}
+.sessionsCharts-container {
+    grid-area: session;
+}
+
+.performanceCharts-container {
+    grid-area: performance;
+}
+.scoreCharts-container {
+    grid-area: score;
+}
+.nutrimentsData-container {
+    grid-area: nutrients;
 }

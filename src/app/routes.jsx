@@ -15,8 +15,8 @@ import {
 const routes = createBrowserRouter(
     createRoutesFromElements(
         <>
-            {/* Redirection hardcode penser a changer par le userId*/}
-            <Route path="/" element={<Navigate to="/1/dashboard" />} />
+            {/* Redirection hardcode vers le userId 12 penser a changer par le userId*/}
+            <Route path="/" element={<Navigate to="/12/dashboard" />} />
 
             {/* Routes imbriquées sous "/:id" */}
             <Route path="/:id" element={<DashboardLayout />}>

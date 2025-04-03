@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
-import Title from "../../components/Title";
+import Title from "./../../components/ui/Title";
 import ActivityCharts from "../../components/charts/ActivityCharts";
 import SessionsCharts from "../../components/charts/SessionsCharts";
 import PerformanceCharts from "../../components/charts/PerformanceCharts";

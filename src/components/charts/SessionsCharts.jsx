@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../assets/styles/components/charts/_sessionsCharts.scss";
+import "./../../assets/styles/charts/_sessionsCharts.scss";
 import {
     LineChart,
     Line,

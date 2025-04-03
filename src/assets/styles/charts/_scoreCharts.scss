@@ -4,15 +4,21 @@
     position: relative;
     padding: 24px 30px;
     background-color: #fbfbfb;
+    @media (max-width: 1339px) {
+        padding: 20px;
+    }
 }
 .scoreCharts-title {
     position: absolute;
-    top: 30px;
-    left: 24px;
+    top: 24px;
+    left: 30px;
     margin: 0;
     font-size: 15px;
     font-weight: 500;
     color: #20253a;
+    @media (max-width: 1339px) {
+        left: 24px;
+    }
 }
 .scoreCharts-info {
     position: absolute;

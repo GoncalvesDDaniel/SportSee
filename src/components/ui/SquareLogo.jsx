@@ -1,5 +1,5 @@
 import React from "react";
-import "./../assets/styles/components/_squareLogo.scss";
+import "./../../assets/styles/components/_squareLogo.scss";
 
 function SquareLogo(props) {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../assets/styles/components/charts/_activityCharts.scss";
+import "./../../assets/styles/charts/_activityCharts.scss";
 import {
     Bar,
     BarChart,

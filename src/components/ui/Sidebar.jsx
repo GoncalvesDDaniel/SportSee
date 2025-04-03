@@ -1,11 +1,11 @@
 import React from "react";
-import "./../assets/styles/components/_sidebar.scss";
-import "./../assets/styles/components/_squareLogo.scss";
+import "./../../assets/styles/components/_sidebar.scss";
+import "./../../assets/styles/components/_squareLogo.scss";
 import SquareLogo from "./SquareLogo";
-import yoga from "./../assets/images/yoga.svg";
-import swimming from "./../assets/images/swimming.svg";
-import cycling from "./../assets/images/cycling.svg";
-import fitness from "./../assets/images/fitness.svg";
+import yoga from "./../../assets/images/yoga.svg";
+import swimming from "./../../assets/images/swimming.svg";
+import cycling from "./../../assets/images/cycling.svg";
+import fitness from "./../../assets/images/fitness.svg";
 
 function Sidebar() {
     return (

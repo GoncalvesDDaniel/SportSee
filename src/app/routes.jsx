@@ -15,7 +15,7 @@ import {
 const routes = createBrowserRouter(
     createRoutesFromElements(
         <>
-            {/* Redirection par défaut */}
+            {/* Redirection hardcode penser a changer par le userId*/}
             <Route path="/" element={<Navigate to="/1/dashboard" />} />
 
             {/* Routes imbriquées sous "/:id" */}

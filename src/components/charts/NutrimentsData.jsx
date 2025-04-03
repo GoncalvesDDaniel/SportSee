@@ -1,7 +1,6 @@
 import React from "react";
-import SquareLogo from "../SquareLogo";
-import id1 from "./../../services/mocks/user/id1.json";
-import "./../../assets/styles/components/charts/_nutrimentsData.scss";
+import SquareLogo from "../ui/SquareLogo";
+import "./../../assets/styles/charts/_nutrimentsData.scss";
 import apple from "./../../assets/images/apple.svg";
 import cheeseburger from "./../../assets/images/cheeseburger.svg";
 import chicken from "./../../assets/images/chicken.svg";

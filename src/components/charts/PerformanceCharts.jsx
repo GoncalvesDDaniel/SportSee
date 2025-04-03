@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../assets/styles/components/charts/_performanceCharts.scss";
+import "./../../assets/styles/charts/_performanceCharts.scss";
 import {
     PolarAngleAxis,
     PolarGrid,
@@ -15,8 +15,8 @@ function PerformanceCharts(props) {
             <ResponsiveContainer width="100%" aspect={258 / 263}>
                 <RadarChart
                     data={props.data}
-                    outerRadius=" 75%"
-                    margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
+                    outerRadius=" 70%"
+                    margin={{ top: 30, right: 30, bottom: 30, left: 30 }}
                 >
                     <PolarGrid radialLines={false} />
                     <PolarAngleAxis

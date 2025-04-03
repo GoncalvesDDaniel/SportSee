@@ -1,5 +1,6 @@
 import React from "react";
-import "./../../assets/styles/components/charts/_scoreCharts.scss";
+// import "./../../assets/styles/charts/scoreCharts";
+import "./../../assets/styles/charts/_scoreCharts.scss";
 import { PieChart, Pie, ResponsiveContainer, Cell } from "recharts";
 
 function ScoreCharts(props) {

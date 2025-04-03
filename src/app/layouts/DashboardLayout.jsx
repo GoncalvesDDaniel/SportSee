@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/Header";
-import Sidebar from "../../components/Sidebar";
+import Header from "../../components/ui/Header";
+import Sidebar from "../../components/ui/Sidebar";
 import "./../../assets/styles/pages/_dashboardLayout.scss";
 import { Outlet } from "react-router";
 

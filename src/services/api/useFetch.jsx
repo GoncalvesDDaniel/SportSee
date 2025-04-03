@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 
+/**
+ * Hook pour récupérer des données depuis une URL via l'API Fetch.
+ * @param {string} url
+ * @returns {{ data: any | null, loading: boolean, error: string | null }}
+ */
 function useFetch(url) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);

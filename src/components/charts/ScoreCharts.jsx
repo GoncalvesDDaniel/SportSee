@@ -1,24 +1,32 @@
 import React from "react";
-// import "./../../assets/styles/charts/scoreCharts";
+import PropTypes from "prop-types";
 import "./../../assets/styles/charts/_scoreCharts.scss";
 import { PieChart, Pie, ResponsiveContainer, Cell } from "recharts";
 
+/**
+ * Affiche le graphique du score de l'utilisateur
+ * Affiche également le pourcentage arrondi au centre du graphique.
+ *
+ * @component
+ * @param {object} props
+ * @param {number} props.data
+ */
 function ScoreCharts(props) {
-    //creation d'un tableau car l'astuce consiste a utiliser un pie charts avec 2 valeurs
+    //creation d'un tableau, le score en rouge et le reste en transparent
     const userScore = props.data;
     const data = [
         { name: "score", value: userScore },
-        { name: "remainder", value: 1 - userScore }, // Le reste pour faire 100%
+        { name: "remainder", value: 1 - userScore },
     ];
     const COLORS = ["#FF0000", "transparent"];
-    // Creer un cercle plein de fond blanc pour faire correspondre avec la maquette
+
+    // Creer un cercle de fond blanc pour faire correspondre avec la maquette
     const backgroundCircleData = [{ name: "background", value: 1 }];
 
     return (
         <section className="scoreCharts-container">
             <h3 className="scoreCharts-title">Score</h3>
             <div className="scoreCharts-info">
-                {/* affiche un entier du score en pourcentage */}
                 <div className="scoreCharts-info_score">{`${Math.round(
                     userScore * 100
                 )}%`}</div>
@@ -41,7 +49,6 @@ function ScoreCharts(props) {
                         innerRadius="70%"
                         outerRadius="80%"
                         cornerRadius={10}
-                        // fill="#8884d8"
                     >
                         {data.map((entry, index) => (
                             <Cell
@@ -66,4 +73,7 @@ function ScoreCharts(props) {
     );
 }
 
+ScoreCharts.propTypes = {
+    data: PropTypes.number.isRequired,
+};
 export default ScoreCharts;

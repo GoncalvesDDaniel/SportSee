@@ -57,18 +57,20 @@ Vous pouvez accéder à leur tableau de bord via les URLs correspondantes dans l
 
 ## 5. Technologies Utilisées (Frontend)
 
--   **React** (v17 ou v18 - précise ta version)
--   **React Router** (v6 - précise ta version) : Pour la navigation entre les pages/utilisateurs.
+-   **React**
+-   **React Router** : Pour la navigation entre les pages/utilisateurs.
 -   **Recharts** : Pour la création des graphiques de visualisation de données.
--   **Styled Components** / **CSS Modules** / **SASS** (Précise la méthode de styling que tu as choisie) : Pour la mise en forme des composants.
--   **Axios** / **Fetch API** (Précise comment tu fais tes appels API) : Pour récupérer les données depuis le backend.
+-   **SASS** : Pour la mise en forme des composants.
+-   **Fetch API** : Pour récupérer les données depuis le backend.
 -   **PropTypes** : Pour la validation et la documentation des props des composants React.
 
-## 6. Endpoints API Utilisés
+## 6. Pistes d'Amélioration & Feedback
 
-Ce frontend consomme les endpoints suivants du backend (tournant sur `http://localhost:3000`) :
+Ce projet a été réalisé dans le cadre d'un parcours d'apprentissage. Il y a certainement des aspects qui pourraient être améliorés.
 
--   `/user/${userId}` : Informations générales de l'utilisateur (nom, score, données clés).
--   `/user/${userId}/activity` : Activité quotidienne (poids, calories).
--   `/user/${userId}/average-sessions` : Durée moyenne des sessions.
--   `/user/${userId}/performance` : Données de performance (radar chart).
+Si vous avez des suggestions, des remarques ou si vous repérez des bugs :
+
+-   N'hésitez pas à ouvrir une **Issue** sur ce dépôt GitHub.
+-   Vous pouvez également me contacter [via mon profil LinkedIn](https://www.linkedin.com/in/daniel-d-gon%C3%A7alves/).
+
+Tout retour constructif est le bienvenu !

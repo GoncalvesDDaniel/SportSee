@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SquareLogo from "../ui/SquareLogo";
 import "./../../assets/styles/charts/_nutrimentsData.scss";
 import apple from "./../../assets/images/apple.svg";
@@ -6,8 +7,14 @@ import cheeseburger from "./../../assets/images/cheeseburger.svg";
 import chicken from "./../../assets/images/chicken.svg";
 import energy from "./../../assets/images/energy.svg";
 
+/**
+ * Affiche des cartes sur nutriments de l'utilisateur
+ *
+ * @component
+ * @param {object} props
+ * @param {object} props.data
+ */
 function NutrimentsData(props) {
-    // console.log(id1.data.keyData);
     return (
         <section className="nutrimentsData-container">
             <div className="nutriment-box">
@@ -74,5 +81,8 @@ function NutrimentsData(props) {
         </section>
     );
 }
+NutrimentsData.propTypes = {
+    data: PropTypes.object.isRequired,
+};
 
 export default NutrimentsData;

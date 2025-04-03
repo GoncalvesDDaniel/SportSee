@@ -1,4 +1,3 @@
-// services/api/useDashboardData.js
 import { useState, useEffect } from "react";
 import {
     formatUserData,
@@ -6,6 +5,16 @@ import {
     formatSessionsData,
     formatPerformanceData,
 } from "../../utils/dataFormatters";
+
+/**
+ * Hook personnalisé pour charger et formater toutes les données d'un utilisateur.
+ * @param {string | number} userId L'ID de l'utilisateur dont on veut charger les données.
+ * @returns {{
+ *   data: object | null,
+ *   loading: boolean,
+ *   error: string | null
+ * }}
+ */
 
 function useDashboardData(userId) {
     const [data, setData] = useState({

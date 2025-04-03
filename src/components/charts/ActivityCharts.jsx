@@ -1,30 +1,40 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./../../assets/styles/charts/_activityCharts.scss";
 import {
     Bar,
     BarChart,
     CartesianGrid,
-    Legend,
     ResponsiveContainer,
     Tooltip,
     XAxis,
     YAxis,
 } from "recharts";
 
+/**
+ * Composant interne a Recharts pour afficher une tooltips personnalisée
+ */
+const CustomTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+        return (
+            <div className="custom-tooltip-activity">
+                {/* payload[0] = (kg) */}
+                <p>{`${payload[0].value}kg`}</p>
+                {/* payload[1] = (kCal) */}
+                <p>{`${payload[1].value}kCal`}</p>
+            </div>
+        );
+    }
+    return null;
+};
+
+/**
+ * Affiche le graphique de l'activité quotidienne de l'utilisateur.
+ * @component
+ * @param {object} props
+ * @param {Array<object>} props.data - Données formatées
+ */
 function ActivityCharts(props) {
-    const CustomTooltip = ({ active, payload }) => {
-        if (active && payload && payload.length) {
-            return (
-                <div className="custom-tooltip-activity">
-                    {/* payload[0] = (kg) */}
-                    <p>{`${payload[0].value}kg`}</p>
-                    {/* payload[1] = (kCal) */}
-                    <p>{`${payload[1].value}kCal`}</p>
-                </div>
-            );
-        }
-        return null;
-    };
     return (
         <section className="activityCharts-container">
             <div className="activityCharts-header">
@@ -98,5 +108,8 @@ function ActivityCharts(props) {
         </section>
     );
 }
+ActivityCharts.PropTypes = {
+    data: PropTypes.array.isRequired,
+};
 
 export default ActivityCharts;

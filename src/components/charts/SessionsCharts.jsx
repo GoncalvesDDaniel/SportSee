@@ -1,15 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./../../assets/styles/charts/_sessionsCharts.scss";
 import {
     LineChart,
     Line,
-    Legend,
     ResponsiveContainer,
     Tooltip,
     XAxis,
     YAxis,
 } from "recharts";
 
+/**
+ * Composant interne a Recharts pour afficher une tooltips personnalisée
+ */
 const CustomTooltipSessions = ({ active, payload }) => {
     if (active && payload && payload.length) {
         return (
@@ -21,6 +24,13 @@ const CustomTooltipSessions = ({ active, payload }) => {
     return null;
 };
 
+/**
+ * Affiche le graphique des sessions de l'utilisateur.
+ *
+ * @component
+ * @param {object} props
+ * @param {number} props.data
+ */
 function SessionsCharts(props) {
     return (
         <section className="sessionsCharts-container">
@@ -87,7 +97,7 @@ function SessionsCharts(props) {
                         activeDot={{
                             r: 4,
                             strokeWidth: 4,
-                            // solution retenu pour creer une petite ombre
+                            // solution retenu pour creer un halo
                             stroke: "rgba(255, 255, 255, 0.2)",
                             fill: "#FFF",
                         }}
@@ -97,5 +107,9 @@ function SessionsCharts(props) {
         </section>
     );
 }
+
+SessionsCharts.propTypes = {
+    data: PropTypes.array.isRequired,
+};
 
 export default SessionsCharts;

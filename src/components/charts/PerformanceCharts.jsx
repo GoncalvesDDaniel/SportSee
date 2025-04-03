@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./../../assets/styles/charts/_performanceCharts.scss";
 import {
     PolarAngleAxis,
@@ -9,6 +10,14 @@ import {
     ResponsiveContainer,
 } from "recharts";
 
+/**
+ * Affiche le graphique des performances de l'utilisateur
+ * (Cardio, Energie, Endurance, Force, Vitesse, Intensité).
+ *
+ * @component
+ * @param {object} props
+ * @param {Array<object>} props.data
+ */
 function PerformanceCharts(props) {
     return (
         <section className="performanceCharts-container">
@@ -38,5 +47,7 @@ function PerformanceCharts(props) {
         </section>
     );
 }
-
+PerformanceCharts.propTypes = {
+    data: PropTypes.array.isRequired,
+};
 export default PerformanceCharts;

@@ -1,4 +1,6 @@
-# SportSee - Dashboard d'Analytics Sportive (Frontend - Projet 12 OpenClassrooms)
+# SportSee - Dashboard d'Analytics Sportive
+
+## Frontend - Projet 12 OpenClassrooms
 
 Ce projet est l'interface utilisateur développée en React. Il permet de visualiser les données d'un utilisateur sous forme de graphique. Ce projet fait partie de la formation Développeur Web d'OpenClassrooms.
 
@@ -6,14 +8,16 @@ Ce projet est l'interface utilisateur développée en React. Il permet de visual
 
 ## 1. Prérequis
 
--   **Backend SportSee :**
-    -   Le backend doit être cloné, installé et **lancé séparément**.
-    -   Référentiel du backend : `https://github.com/OpenClassrooms-Student-Center/SportSee`
-    -   Instructions de lancement du backend : (voir son README).
-    -   Le backend doit tourner sur : `http://localhost:3000`.
 -   **Frontend (ce projet) :**
+
     -   Node.js (v12.18 ou supérieur recommandé, compatible avec le backend)
     -   npm ou yarn
+
+-   **Backend SportSee :**
+    -   [Lien GitHub vers le backend](https://github.com/OpenClassrooms-Student-Center/SportSee)
+    -   Le backend doit être cloné, installé et **lancé séparément**.
+    -   Instructions de lancement du backend : (voir le README).
+    -   Le backend doit tourner sur : `http://localhost:3000`.
 
 ## 2. Installation du Frontend
 

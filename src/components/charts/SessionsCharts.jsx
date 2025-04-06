@@ -88,10 +88,12 @@ function SessionsCharts(props) {
                         content={<CustomTooltipSessions />}
                         cursor={false}
                     />
+
                     <Line
-                        type="monotone"
+                        type="basis"
                         dataKey="sessionLength"
                         stroke="url(#lineGradient)"
+                        strokeLinecap="round"
                         strokeWidth={2}
                         dot={false}
                         activeDot={{

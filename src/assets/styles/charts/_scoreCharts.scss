@@ -28,13 +28,19 @@
     text-align: center;
     z-index: 2;
     &_score {
-        font-size: 26px; // Ajuster
+        font-size: 26px;
         font-weight: 700;
-        color: #282d30; // Couleur du pourcentage
-        margin-bottom: 5px; // Espace sous le pourcentage
+        color: #282d30;
+        margin-bottom: 5px;
+        @media (max-width: 1339px) {
+            font-size: 20px;
+        }
     }
     &_text {
-        font-size: 16px; // Ajuster
+        font-size: 16px;
         color: #74798c;
+        @media (max-width: 1339px) {
+            font-size: 12px;
+        }
     }
 }

@@ -1,5 +1,4 @@
 .activityCharts-container {
-    // svg { max-width: 835px; }
     max-width: 835px;
     padding: 24px 32px;
     background-color: rgba(0, 0, 0, 0.02);
@@ -28,7 +27,7 @@
     padding-left: 1.5em;
 
     &::before {
-        // Simule une puce
+        // puce pour la legende
         content: "•";
         font-size: 2em;
         position: absolute;
@@ -43,16 +42,18 @@
         color: rgba(230, 0, 0, 1);
     }
 }
-
+.activityCharts-container {
+    .recharts-tooltip-wrapper {
+        background-color: #e60000;
+        padding: 4px 7px;
+    }
+}
 .custom-tooltip-activity {
-    background-color: #e60000;
     color: white;
     font-size: 10px;
     font-weight: 500;
     line-height: 2rem;
-    padding: 4px 7px;
     text-align: center;
-
     p {
         margin: 7px 0;
     }
